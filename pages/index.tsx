@@ -51,7 +51,7 @@ export default function Home() {
 
           <Link
             // add my email
-            href="/cv"
+            href="/contact"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
