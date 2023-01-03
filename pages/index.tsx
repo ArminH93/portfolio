@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import profile from '../public/profile.jpg'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
@@ -16,8 +17,37 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+
         <div className={styles.description}>
-          <h1 className={inter.className}>Armin Halilovic</h1>
+
+          <h1
+            className={inter.className}
+            // Make gradient text minimalistic and readable in dark and light mode
+            style={{
+              background:
+                'linear-gradient(45deg, #8fd3f4 30%, #FF8E53 90%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              textAlign: 'center',
+            }}
+          >
+            Armin Halilovic
+
+          </h1>
+          {/* <Image
+            src={profile}
+            height={144}
+            width={144}
+            alt="Armin Halilovic"
+            className={styles.profile}
+          >
+          </Image> */}
+        </div>
+
+        <div className={styles.grid}>
+
         </div>
 
         <div className={styles.grid}>
