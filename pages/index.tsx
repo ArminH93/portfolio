@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import profile from '../public/profile.jpg'
+import linkedin from '../public/linkedin.png'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] }) // Inter is a Google font
 
 export default function Home() {
   return (
@@ -20,36 +21,11 @@ export default function Home() {
 
         <div className={styles.description}>
 
-          <h1
-            className={inter.className}
-            // Make gradient text minimalistic and readable in dark and light mode
-            style={{
-              background:
-                'linear-gradient(45deg, #8fd3f4 30%, #FF8E53 90%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              fontSize: '3rem',
-              fontWeight: 'bold',
-              textAlign: 'center',
-            }}
-          >
-            Armin Halilovic
-
-          </h1>
-          {/* <Image
-            src={profile}
-            height={144}
-            width={144}
-            alt="Armin Halilovic"
-            className={styles.profile}
-          >
-          </Image> */}
-        </div>
-
-        <div className={styles.grid}>
+          <h1 className={inter.className}> Armin Halilović </h1>
+          
+          {/* <Image src={profile} height={144} width={144} alt="Armin Halilovic" className={styles.profile}> </Image> */}
 
         </div>
-
         <div className={styles.grid}>
           <Link
             href="/cv"
